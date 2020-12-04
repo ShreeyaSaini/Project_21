@@ -31,14 +31,14 @@ function draw() {
   if (wall.x - bullet.x < bullet.width/2 + wall.width/2
     && damage < 10) {
   bullet.shapeColor = "green";
-
+ wall.shapeColor = "green";
 
   } 
   
   if (wall.x - bullet.x < bullet.width/2 + wall.width/2
     && damage > 10) {
       bullet.shapeColor = "red";
-      bullet.velocityX = 0;
+      wall.shapeColor = "red";
 
   } 
 
